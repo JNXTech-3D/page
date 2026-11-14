@@ -2,9 +2,43 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mi página</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #111; color: #eee; line-height: 1.6; }
+    header { padding: 60px 20px; text-align: center; background: #1c1c1c; }
+    header h1 { font-size: 2.4rem; margin-bottom: 10px; }
+    header p { color: #aaa; }
+    section { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+    h2 { margin-bottom: 12px; color: #4da3ff; }
+    .tarjetas { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .tarjeta { background: #1c1c1c; padding: 20px; border-radius: 10px; }
+    a.boton { display: inline-block; margin-top: 16px; padding: 10px 20px; background: #4da3ff; color: #111; text-decoration: none; border-radius: 6px; font-weight: bold; }
+    footer { text-align: center; padding: 30px; color: #777; }
+  </style>
 </head>
 <body>
-  <h1>Hola, mundo</h1>
+  <header>
+    <h1>Título de tu página</h1>
+    <p>Una frase corta que explique de qué trata</p>
+  </header>
+
+  <section>
+    <h2>Sobre mí</h2>
+    <p>Acá escribís una presentación breve.</p>
+  </section>
+
+  <section>
+    <h2>Servicios</h2>
+    <div class="tarjetas">
+      <div class="tarjeta"><h3>Servicio 1</h3><p>Descripción corta.</p></div>
+      <div class="tarjeta"><h3>Servicio 2</h3><p>Descripción corta.</p></div>
+      <div class="tarjeta"><h3>Servicio 3</h3><p>Descripción corta.</p></div>
+    </div>
+    <a class="boton" href="https://wa.me/549XXXXXXXXXX">Contactame por WhatsApp</a>
+  </section>
+
+  <footer>© 2026 Tu nombre</footer>
 </body>
 </html>
