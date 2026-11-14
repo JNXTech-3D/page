@@ -59,3 +59,25 @@ footer .ancho{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px
 @media(max-width:820px){.tiles,.resenas,.dos{grid-template-columns:1fr}.dos{gap:28px}.pasos{grid-template-columns:1fr 1fr}.portada{padding:52px 0 44px}}
 @media(max-width:480px){.pasos{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* ---- Versión empresa: portada destacada, nosotros y valores ---- */
+.hero{background:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px),var(--tinta);background-size:42px 42px;color:var(--blanco);border-bottom:6px solid var(--senal)}
+.hero h1{font-weight:900;font-size:clamp(2.4rem,6.4vw,4.8rem)}
+.hero p.intro{color:#b9c6d1}
+.hero .boton{background:var(--senal);color:var(--tinta)}
+.hero .boton:hover{background:var(--blanco)}
+.hero .boton.claro{background:transparent;color:var(--blanco);border-color:var(--blanco)}
+.hero .boton.claro:hover{background:var(--blanco);color:var(--tinta)}
+.hero .foto{border-color:#33475a;background:repeating-linear-gradient(45deg,#1d2b38 0 14px,#223241 14px 28px)}
+.hero .foto.sin-foto::after{color:#b9c6d1}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.garantias{background:var(--senal);color:var(--tinta)}
+.garantias .ancho{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding-top:20px;padding-bottom:20px;font-weight:600}
+.garantias span{display:block;font-weight:400;font-size:.92rem}
+.valores{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:8px}
+.valores div{border-top:3px solid var(--senal);padding-top:14px}
+.valores h3{font-size:1.2rem;margin-bottom:6px}
+.valores p{color:var(--suave);font-size:.96rem}
+.historia p{margin-bottom:16px;max-width:60ch}
+.historia p:last-child{margin-bottom:0}
+@media(max-width:820px){.hero-grid,.garantias .ancho,.valores{grid-template-columns:1fr}}
