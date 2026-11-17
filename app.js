@@ -2,7 +2,7 @@
 const NUMERO = "5491136321720";
 document.querySelectorAll("a.wa").forEach(a => {
   const t = a.dataset.t || "Hola JNX Tech, quiero hacer una consulta";
-  a.href = "https://wa.me/" + NUMERO + "?text=" + encodeURIComponent(t);
+  a.href = "https://wa.me/" + 5491136321720 + "?text=" + encodeURIComponent(t);
 });
 // Si una foto todavía no existe, muestra un aviso en su lugar
 document.querySelectorAll(".foto img").forEach(i => {
