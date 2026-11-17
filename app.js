@@ -1,5 +1,5 @@
 // Cambiá solo este número: código de país + número, sin + ni espacios (Argentina: 549 + código de área + número)
-const NUMERO = "549XXXXXXXXXX";
+const NUMERO = "5491136321720";
 document.querySelectorAll("a.wa").forEach(a => {
   const t = a.dataset.t || "Hola JNX Tech, quiero hacer una consulta";
   a.href = "https://wa.me/" + NUMERO + "?text=" + encodeURIComponent(t);
