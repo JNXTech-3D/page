@@ -49,7 +49,7 @@
     var texto = (a.textContent || "").toLowerCase();
     var vacio = a.getAttribute("href") === "#";
     var pideContacto = texto.indexOf("whatsapp") !== -1 || texto.indexOf("presupuesto") !== -1;
-    if (vacio && pideContacto) {
+    if (vacio && pideContacto && !a.hasAttribute("data-t")) {
       a.href = waLink(cfg.mensajeGeneral);
       a.target = "_blank";
       a.rel = "noopener noreferrer";
